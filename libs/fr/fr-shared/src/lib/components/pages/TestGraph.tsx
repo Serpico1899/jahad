@@ -1,7 +1,8 @@
-import { useStore } from 'fr/fr-states';
+import { useStore, getCountriesByGraphMethods } from 'fr/fr-states';
 import styled from 'styled-components';
 import { Card } from '../organism/card';
 import { Title } from '../molecules';
+import { useEffect } from 'react';
 
 export const TestGraph = () => {
   const countries = useStore((state) => state.countries);
