@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react';
 
-import FrFrShared from './fr-fr-shared';
+import FrState from './fr-state';
 
-describe('FrFrShared', () => {
+describe('FrState', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<FrFrShared />);
+    const { baseElement } = render(<FrState />);
     expect(baseElement).toBeTruthy();
   });
 });
