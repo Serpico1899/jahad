@@ -9,7 +9,7 @@ export const RestApiRequest = ({ url }: IRestApiRequest) => getResponse(url);
 
 const getResponse = async (url: string) => {
   try {
-    const response = await axios.get(`http://localhost:9900/${url}`);
+    const response = await axios.get(`http://localhost:3050/${url}`);
     // console.log('result ', response);
 
     if (!response.status || response.data.success === false) {
